@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    background: gainsboro;
+    position: relative;
+}
+#nav-menu{
+    width: 92%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    /* border: 1px dashed red; */
+}
+.VSgn{
+    width: 300px;
+    cursor: pointer;
+}
+#nav-menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    /* border: 1px dashed red; */
+}
+#nav-menu ul li a {
+    text-decoration: none;
+    color: #606163;
+    font-weight: bold;
+}
+#nav-menu ul li a:hover{
+    color: rgb(242, 49, 49);
+}
+ .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ABOUT{
+    margin-left:8%;
+    margin-top: 15%;
+    
+}
+.ABOUT h1{
+    font-size: 50px;
+    color:#212121;
+    margin-bottom: 20px;
+}
+span{
+    color: orange;
+}
+
+.ABOUT p {
+    color: #555;
+    line-height: 22px;
+}
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s , left 1s;
+}
+.images:hover .shape {
+    bottom: 40px;
+}
+.images:hover .pic {
+    left: 45%;
+}
+.social{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+.social a {
+    font-size: 30px;
+    margin: 5px;
+}
+.social a:hover{
+    color: orange;
+}
