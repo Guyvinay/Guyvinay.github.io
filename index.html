@@ -1,65 +1,114 @@
-<!DOCTYPE html>
+~<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="container">
-        <nav id="nav-menu">
-            <img src="./vinay_logo_SVG.svg" alt="" class="VSgn">
-            <div class="nav-link">
-            <ul>
-                <li class="nav-link home"><a href="">HOME</a></li>
-                <li class="nav-link about"><a href="">ABOUT</a></li>
-                <li class="nav-link skills"><a href="">SKILLS</a></li>
-                <li class="nav-link projects"><a href="">PROJECTS</a></li>
-                <li class="nav-link contact"><a href="">CONNECT ME</a></li>
-                <li class="nav-link resume"><a href="">RESUME</a></li>
-            </ul>
-            <i class="fa-solid fa-moon"></i>
+    //navbar
+    <div id="nav-menu">
+        <div class="signature"></div>
+        <div class="nav-link">
+            <div class="nav-link home"></div>
+            <div class="nav-link about"></div>
+            <div class="nav-link skills"></div>
+            <div class="nav-link projects"></div>
+            <div class="nav-link contact"></div>
+            <div class="nav-link resume">
+                <div id="resume-button-2">
+                    <a class="resume-link-2" href=""></a>
+                </div>
             </div>
-        </nav>
-        <div id="home">
-        <div class="ABOUT" class="about section">
-            <h1 id="user-detail-name">I'm <span>VINAY</span> Kumar Singh</h1>
-            <p id="user-detail-intro">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Voluptas, amet harum error<br> consequuntur eum totam veritatis   quam tenetur!</p>
         </div>
-        <div class="images">
-            <img src="./shape.png" alt="" class="shape">
-            <img src="./vinay_Img.png" alt="" class=".home-img">
-        </div> 
-        <div class="social">
-            <a href="https://www.instagram.com/guyvinay/"><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin" id="contact-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        <div id="skills">
-            <div class="skills-card">
+    </div>
 
+    //home section 
+    <div id="home">
+        <div class="intoMe">
+            <div id="user-detail-name"></div>
+            <div id="user-detail-intro"></div>
+            <div id="resume-button-1">
+                <a class="resume-link-1" href=""></a>
             </div>
         </div>
-        <div id="projects">
-            <div class="project-card"></div>
-            <div class="project-card"></div>
-            <div class="project-card"></div>
-            <div class="project-card"></div>
+        <div class="home-img"></div>
+    </div>
+
+    //about section
+    <div id="about" class="about section"></div>
+
+    //skills section
+    <div id="skills">
+
+        <div class="skills-card">
+            <div class="skills-card-img"></div>
+            <div class="skills-card-name"></div>
         </div>
-       <div id="contact">
+        <div class="skills-card">
+            <div class="skills-card-img"></div>
+            <div class="skills-card-name"></div>
+        </div>
+        <div class="skills-card">
+            <div class="skills-card-img"></div>
+            <div class="skills-card-name"></div>
+        </div>
+        <div class="skills-card">
+            <div class="skills-card-img"></div>
+            <div class="skills-card-name"></div>
+        </div>
+        <div class="skills-card">
+            <div class="skills-card-img"></div>
+            <div class="skills-card-name"></div>
+        </div>
+
+    </div>
+
+    //projects section
+    <div id="projects">
+        <div class="project-card">
+            <div class="project-img"></div>
+            <div class="project-title"></div>
+            <div class="project-description"></div>
+            <div class="project-tech-stack"></div>
+            <div class="project-github-link"></div>
+            <div class="project-deployed-link"></div>
+        </div>
+        <div class="project-card">
+            <div class="project-img"></div>
+            <div class="project-title"></div>
+            <div class="project-description"></div>
+            <div class="project-tech-stack"></div>
+            <div class="project-github-link"></div>
+            <div class="project-deployed-link"></div>
+        </div>
+        <div class="project-card">
+            <div class="project-img"></div>
+            <div class="project-title"></div>
+            <div class="project-description"></div>
+            <div class="project-tech-stack"></div>
+            <div class="project-github-link"></div>
+            <div class="project-deployed-link"></div>
+        </div>
+        <div class="project-card">
+            <div class="project-img"></div>
+            <div class="project-title"></div>
+            <div class="project-description"></div>
+            <div class="project-tech-stack"></div>
+            <div class="project-github-link"></div>
+            <div class="project-deployed-link"></div>
+        </div>
+    </div>
+
+    //contact section
+    <div id="contact">
+        <div id="contact-github"></div>
+        <div id="contact-linkedin"></div>
         <div id="contact-phone"></div>
         <div id="contact-email"></div>
-        <a href=""><i class="fa-brands fa-linkedin" id="contact-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-github" id="contact-github"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-       </div>
-
     </div>
-    </div>
-
 </body>
+<script src="./index.js"></script>
 </html>
