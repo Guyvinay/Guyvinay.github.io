@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(10, 25, 47);
+    background-color: rgb(241, 239, 239);
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
   }
@@ -19,26 +19,25 @@
     height: 85vh;
     margin-top: 80px;
     display: table;
+    border: 1px dashed red;
   }
   #home > div {
     display: table-cell;
     vertical-align: middle;
+    border: 2px dashed rgb(71, 61, 61);
   }
   #home > div > h2 {
-    color: rgb(225, 231, 253);
-    font-size: 4vw;
-  }
-  #home > div > h2 > img {
-    width: 5vw;
+    color: rgb(228, 150, 4);
+    font-size: 5vw;
   }
   
   #home_Name {
-    color: rgb(197, 210, 254);
-    font-size: 7vw;
+    color: rgb(141, 146, 161);
+    font-size: 5vw;
   }
   #home_Dis {
     color: rgb(125, 145, 207);
-    font-size: 5vw;
+    font-size: 4vw;
   }
   #homeResumeBtnDiv {
     width: 60%;
@@ -49,27 +48,26 @@
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 24px;
-    border: 1px solid rgb(89, 226, 197);
+    border: 1px solid orangered;
     background-color: #0000;
     cursor: pointer;
     transition: 0.4s ease-in-out all;
   }
   #resume-button-2 > a {
-    color: rgb(89, 226, 197);
+    color: orange;
     text-decoration: none;
   }
-  #resume-link-2 > button:hover {
-    transform: scale(1.05);
-    color: white;
-    background-color: rgb(89, 226, 197);
+  #resume-button-2:hover {
+    transform: scale(1.08);
+    color: rgb(214, 191, 191);
   }
   
-  /* ***********************************************About section******************************************************** */
   #about_main {
-    width: 75%;
+    width: 85%;
     margin: auto;
     margin-top: 40px;
-    height: 74vh;
+    height: 75vh;
+    border: 1px dashed red;
   }
   
   #about_inner {
@@ -80,11 +78,11 @@
   }
   
   #profile_img {
-    max-height: 20vw;
-    min-height: 20vw;
-    max-width: 20vw;
-    min-width: 20vw;
-    border: 5px solid rgb(89, 226, 197);
+    max-height: 30vw;
+    min-height: 30vw;
+    max-width: 30vw;
+    min-width: 30vw;
+    border: 3px solid rgb(201, 134, 10);
     font-size: 0;
     border-radius: 50%;
     overflow: hidden;
@@ -92,10 +90,10 @@
   }
   
   #profile_img img {
-    max-height: 20vw;
-    min-height: 20vw;
-    max-width: 20vw;
-    min-width: 20vw;
+    max-height: 30vw;
+    min-height: 30vw;
+    max-width: 30vw;
+    min-width: 30vw;
   }
   
   #user_details {
@@ -116,7 +114,10 @@
     text-align: center;
   }
   
-  /* ***********************************************skills section******************************************************** */
+
+
+
+  
   #skills {
     margin-top: 70px;
     border: 1px solid rgb(10, 25, 47);

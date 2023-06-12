@@ -25,7 +25,7 @@ function navSlide() {
   navSlide();
   
   // git calendar
-  GitHubCalendar(".react-activity-calendar", "punitjuneja123", {
+  GitHubCalendar(".react-activity-calendar", "guyvinay", {
     responsive: true,
     // global_stats: false,
     // tooltips: true,
@@ -35,7 +35,7 @@ function navSlide() {
   let resumeDwn1 = document.querySelector("#resume-link-1");
   resumeDwn1.addEventListener("click", () => {
     window.location.assign(
-      "https://drive.google.com/file/d/17be1x7lBmygBI0IjFA4bvg7yMvQxmv1j/view?usp=sharing",
+      "https://drive.google.com/file/d/1PPeQnU-bnOuN_G7RzBKzvCqYIbYdE3Ry/view?usp=sharing",
       "_blank"
     );
   });
@@ -44,7 +44,7 @@ function navSlide() {
   let resumeDwn2 = document.querySelector("#resume-button-2");
   resumeDwn2.addEventListener("click", () => {
     window.location.assign(
-      "https://drive.google.com/file/d/17be1x7lBmygBI0IjFA4bvg7yMvQxmv1j/view?usp=sharing",
+      "https://drive.google.com/file/d/1PPeQnU-bnOuN_G7RzBKzvCqYIbYdE3Ry/view?usp=sharing",
       "_blank"
     );
   });
