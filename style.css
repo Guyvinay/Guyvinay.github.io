@@ -400,3 +400,27 @@
     }
   }
   
+
+
+  .mapcontainer{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+}
+.mapcontainer>h1{
+    line-height: 18px;
+    color: orangered;
+    /* margin-bottom: 10px; */
+}
+iframe{
+    width: 95%;
+    height: 280px;
+    margin-top: 10px;
+    /* filter: invert(100%); */
+}
