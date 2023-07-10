@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(241, 239, 239);
+    background-color: rgb(230,230,230);
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
   }
@@ -12,19 +12,33 @@
     margin-top: 70px;
   }
   
-  /* ************************************************home section******************************************************** */
+  body{
+    height: 500vh;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(110, 105, 103);
+}
+::-webkit-scrollbar-thumb{
+    background:  linear-gradient(rgb(199, 218, 181) ,rgb(120, 203, 255));
+    border-radius: 8px;
+}
+
+  /* home section */
   #home {
     width: 85%;
     margin: auto;
     height: 85vh;
     margin-top: 80px;
     display: table;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
   }
   #home > div {
     display: table-cell;
     vertical-align: middle;
-    border: 2px dashed rgb(71, 61, 61);
+    /* border: 2px dashed rgb(71, 61, 61); */
   }
   #home > div > h2 {
     color: rgb(228, 150, 4);
@@ -48,7 +62,7 @@
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 24px;
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
     background-color: #0000;
     cursor: pointer;
     transition: 0.4s ease-in-out all;
@@ -67,7 +81,7 @@
     margin: auto;
     margin-top: 40px;
     height: 75vh;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
   }
   
   #about_inner {
@@ -117,11 +131,13 @@
 
 
 
-  
+/*   
   #skills {
     margin-top: 70px;
     border: 1px solid rgb(10, 25, 47);
-  }
+  } */
+
+  
   #skills_main {
     width: 75%;
     margin: auto;
@@ -140,33 +156,33 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
-    background-color: rgb(29, 70, 82);
+    background-color: rgb(241,239,239);
     transition: 0.4s ease-in-out all;
   }
   .skills-card-img {
     font-size: 120px;
     align-self: center;
-    background-color: rgb(29, 70, 82);
+    background-color: rgb(241,239,239);
     transition: 0.4s ease-in-out all;
   }
   .skills-card-name {
     color: rgb(125, 145, 207);
     text-align: center;
     margin-top: 20px;
-    background-color: rgb(29, 70, 82);
+    background-color: rgb(241,239,239);
     transition: 0.4s ease-in-out all;
   }
-  .skills-card:hover {
-    background-color: rgb(46, 58, 82);
-  }
+  /* .skills-card:hover {
+    background-color: rgb(87, 98, 119);
+  } */
   
   .skills-card:hover .skills-card-name {
     transform: scale(1.05);
-    background-color: rgb(46, 58, 82);
+    /* background-color: rgb(46, 58, 82); */
   }
   .skills-card:hover .skills-card-img {
     transform: scale(1.05);
-    background-color: rgb(46, 58, 82);
+    /* background-color: rgb(80, 89, 107); */
   }
   
   /* ************************************************ Projects section  ******************************************************** */

@@ -7,19 +7,19 @@ nav {
     padding: 0px 30px;
     align-items: center;
     min-height: 8vh;
-    background-color: gainsboro;
+    background-color: rgb(230,230,230);
     backdrop-filter: blur(6px);
     z-index: 10;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .logo{
-    border: 1px solid red;
-    background: gainsboro;
+    /* border: 1px solid red; */
+    background: rgb(230,230,230);
     width: 30%;
   }
   .logo img{
     width: 90%;
-    background-color: gainsboro;
+    background-color: rgb(230,230,230);
    cursor: pointer;
   }
   .logo:hover{
@@ -76,7 +76,7 @@ nav {
   .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(83, 81, 81);
     margin: 5px;
     transition: all 0.3s ease;
   }
@@ -102,7 +102,7 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 50%;
+      width: 30%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
     }
