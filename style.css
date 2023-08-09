@@ -9,15 +9,25 @@
 
 :root{
   --black: hsl(0, 0%, 0%);
+  --fade-black: hsla(0, 8%, 55%, 0.435);
   --white: hsl(0, 0%, 100%);
+  --fade-white:hsla(0, 10%, 84%, 0.216);
+  --yellow: yellow;
+  --red: red;
 
   --radius-50: 50%;
   --radius-2: 2rem;
+
 }
 
 .dark-mode{
   --white:hsl(0, 0%, 0%);
-  --black:hsl(0, 0%, 100%);
+  --black:hsl(0, 0%, 71%);
+  --yellow:red;
+  --red:yellow;
+  --fade-white: hsla(0, 8%, 55%, 0.435);
+  --fade-black:hsla(0, 10%, 84%, 0.216);
+
 }
 
 
@@ -59,7 +69,9 @@ nav,
   flex-wrap: wrap;
   flex-direction: column;
 } */
-
+.head-pic{
+  filter: drop-shadow(10px 20px 250px var(--yellow));
+}
 
 nav,
 .article-container {
@@ -180,6 +192,9 @@ section {
 .title {
   font-size: 3rem;
   color: var(--black);
+  transform: skewY(-1deg);
+  text-shadow:
+   var(--fade-black) 0.1em 0.1em;
 }
 
 .btn,
