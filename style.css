@@ -130,6 +130,17 @@ nav {
   font-size: 1.5rem;
 }
 
+li{
+  display: block;
+  transform: .7s;
+}
+ul:hover li{
+  filter: blur(2.5px);
+}
+ul li:hover{
+  filter: blur(0px);
+}
+
 #dark-toggle{
   color: var(--black);
   transition: all 0.5s ease-in-out;
@@ -199,8 +210,10 @@ a,
   padding: 1rem;
   width: 8rem;
 }
+.about-pic{
+  border-radius: 50px 0 50px 0;
+}
 
-.about-pic,
 .btn,
 .contact-info-upper-container,
 .details-container,
