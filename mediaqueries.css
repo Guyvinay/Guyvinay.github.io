@@ -7,9 +7,6 @@
   .about-containers {
     flex-wrap: wrap;
   }
-  .exp-bout-containers {
-    flex-wrap: wrap;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -59,7 +56,6 @@
     margin-bottom: 2rem;
   }
   .about-containers,
-  .exp-about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
