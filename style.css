@@ -183,7 +183,7 @@ ul li:hover{
 }
 
 section {
-  padding-top: 7vh;
+  padding-top: 4vh;
   /* height: 93vh; */
   margin: 0 5rem;
 }
@@ -202,6 +202,7 @@ section {
 } */
 .section-container{
   height: 80%;
+  border: 1px solid red;
 }
 
 .title {
@@ -294,8 +295,10 @@ a,
 /* PROFILE SECTION */
 
 #profile {
-  gap: 10rem;
-  height: 60vh;
+  gap: 8rem;
+  height: 70vh;
+  margin-top: 3rem;
+  border: 1px dashed red;
 }
 
 .section__text {
@@ -309,8 +312,8 @@ a,
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 430px;
+  width: 430px;
   margin: auto 0;
 }
 
@@ -320,8 +323,19 @@ a,
 
 /* ABOUT SECTION */
 
+
+
 #about{
-  height: 90vh;
+  height: 80vh;
+}
+
+.about-section-container{
+  display: flex;
+  margin-top: 2rem;
+  gap: 5rem;
+  /* margin-bottom: 12rem; */
+  /* height: 82%; */
+  border: 1px solid red;
 }
 
 .about-containers,
@@ -330,7 +344,7 @@ a,
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1.4rem;
   flex: 1;
 }
 
@@ -355,12 +369,42 @@ a,
 
 /* EXPERIENCE SECTIION */
 
+.exp-about-containers{
+  /* border: 1px dashed red; */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 2rem 0 0;
+}
+.exp-details-card{
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border: var(--black) 0.1rem solid;
+  border-radius: 2rem;
+  padding: 1.7rem;
+  /* flex: 1; */
+}
+
+
 .article-container {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
 }
+
+.exp-article-container{
+  display: flex;
+  justify-content: space-around;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.7rem;
+}
+
 
 article {
   width: 10rem;
