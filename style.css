@@ -12,8 +12,8 @@
   --fade-black: hsla(0, 8%, 55%, 0.435);
   --white: hsl(0, 0%, 100%);
   --fade-white:hsla(0, 10%, 84%, 0.216);
-  --yellow: yellow;
-  --red: red;
+  --yellow: rgb(197, 197, 69);
+  --red: rgb(177, 42, 42);
 
   --bg-secondary: hsl(0, 0%, 95%);
 
