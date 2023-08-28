@@ -72,6 +72,7 @@ nav,
   flex-wrap: wrap;
   flex-direction: column;
 } */
+
 .head-pic{
   filter: drop-shadow(10px 20px 250px var(--yellow));
 }
@@ -284,6 +285,15 @@ a,
 
 .btn-color-2:hover {
   border: var(--white) 0.1rem solid;
+}
+
+.btn-color-2{
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px var(--fade-black);
+}
+.btn-color-2:active{
+  transform: translateY(8px);
+  box-shadow: 0px 0px 0px 0px var(--fade-black);
 }
 
 #socials-container,
