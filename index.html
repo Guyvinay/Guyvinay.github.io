@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./assets/vinay-picofme-01a.png
     ">
+    <link
+rel="stylesheet"
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
     <title>Vinay-Singh-PortFolio</title>
   </head>
 
@@ -533,7 +537,7 @@
     
     <section>
       <div><h3 class="section__text__p1">GitHub Calender</h3></div>
-      <div class="react-activity-calendar">
+      <!-- <div class="react-activity-calendar">
         <div class="calendar">
         Loading the data just for you.
         </div>
@@ -542,9 +546,32 @@
         <script>
         GitHubCalendar(".calendar", "guyvinay");
         GitHubCalendar(".calendar", "guyvinay", { responsive: true });
+        GitHubCalendar(".calendar", "guyvinay", {
+       proxy (guyvinay) {
+         return fetch(`https://your-proxy.com/github?user=guyvinay`)
+       }
+    }).then(r => r.text())
         </script>
-      </div>
-    </section>
+      </div> -->
+      <!-- Include the library. -->
+
+
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+
+
+<!-- Prepare a container for your calendar. -->
+<div>
+  <div class="calendar">
+  <!-- Loading stuff -->
+  Loading the data just for you.
+</div>
+</div>
+
+</section>
 
     <section id="contact">
       <p class="section__text__p1">Get In Touch</p>
@@ -597,6 +624,20 @@
       <p>Made With <i class="fa-solid fa-heart fa-xl icons"></i></p>
     </footer>
 
-    <script src="script.js"></script>
+    
   </body>
+  <script src="script.js"></script>
+  <script>
+    GitHubCalendar(".calendar", "guyvinay");
+  
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "guyvinay", { responsive: true });
+  
+    // Use a proxy
+    GitHubCalendar(".calendar", "guyvinay", {
+       proxy (guyvinay) {
+         return fetch(`https://your-proxy.com/github?user=guyvinay`)
+       }
+    }).then(r => r.text())
+  </script>
 </html>
