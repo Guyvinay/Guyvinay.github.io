@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="./assets/vinay-picofme-01a.png
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="./assets/vinay-picofme-01a.png
     ">
-    <link
-rel="stylesheet"
-href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
-    <title>Vinay-Singh-PortFolio</title>
-  </head>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <title>Vinay-Singh-PortFolio</title>
+</head>
 
-  <body>
+<body>
 
-    <nav id="desktop-nav" class="nav">
-      <div class="logo">
-        <img src="./assets/vinay_logo_SVG.svg" alt="">
-      </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a onclick="window.open('./assets/Vinay-Singh-Resume.pdf')">Resume</a></li>
-          <li> <i class="fa-solid fa-moon" id="dark-toggle" aria-label="Change Theme"></i></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <nav id="hamburger-nav">
-      <div class="logo">
-        <img src="./assets/vinay_logo_SVG.svg" alt="">
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about " onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a onclick="window.open('./assets/Vinay-Singh-Resume.pdf')">Resume</a></li>
-        </div>
-      </div>
-    </nav>
+  <nav id="desktop-nav" class="nav">
+    <div class="logo">
+      <img src="./assets/vinay_logo_SVG.svg" alt="">
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a onclick="window.open('./assets/Vinay-Singh-Resume.pdf')">Resume</a></li>
+        <li> <i class="fa-solid fa-moon" id="dark-toggle" aria-label="Change Theme"></i></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-        class="head-pic" 
-        src="./assets/vinay-picofme-01a.png" alt="Vinay profile picture" />
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <img src="./assets/vinay_logo_SVG.svg" alt="">
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Vinay Kr. Singh</h1>
-        <p class="section__text__p2">JAVA Backend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Vinay-Singh-Resume.pdf')"
-          >
-            Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <!-- <div id="socials-container">
+      <div class="menu-links">
+        <li><a href="#about " onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a onclick="window.open('./assets/Vinay-Singh-Resume.pdf')">Resume</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="head-pic" src="./assets/vinay-picofme-01a.png" alt="Vinay profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vinay Kr. Singh</h1>
+      <p class="section__text__p2">JAVA Backend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Vinay-Singh-Resume.pdf')">
+          Resume
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <!-- <div id="socials-container">
           <img
             src="/assets/linkedin.png"
             class="icon"
@@ -90,435 +85,365 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
             alt=""
           />
         </div> -->
+    </div>
+  </section>
+
+  <section id="about">
+
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img class="about-pic" src="./assets/vinay-picofme-03.png" alt="Profile Picture" />
       </div>
-    </section>
-    
-    <section id="about">
-      
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            class="about-pic"
-            src="./assets/vinay-picofme-03.png"
-            alt="Profile Picture"
-          />
-        </div>
-        <div class="about-details-container">
-          <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-          <div class="about-containers">
-            <div class="details-container">
-              <!-- <img
+      <div class="about-details-container">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-containers">
+          <div class="details-container">
+            <!-- <img
                 class="icon"
                 src="/assets/experience.png"
                 alt="Experience icon"
               /> -->
-              <i class="fa-solid fa-flask fa-xl icons" ></i>
-              <h3>Experience</h3>
-              <p>1+ years<br />Backend Web Development</p>
-            </div>
-            <div class="details-container">
-              <!-- <img
+            <i class="fa-solid fa-flask fa-xl icons"></i>
+            <h3>Experience</h3>
+            <p>1+ years<br />Backend Web Development</p>
+          </div>
+          <div class="details-container">
+            <!-- <img
                 class="icon"
                 src="/assets/education.png"
                 alt="Experience icon"
               /> -->
-              <i class="fa-solid fa-user-graduate fa-xl icons"></i>
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree</p>
-            </div>
+            <i class="fa-solid fa-user-graduate fa-xl icons"></i>
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree</p>
           </div>
-          <div class="text-container">
-            <p>
-              I'm Vinay Kumar Singh, a Java Developer fueled by a profound passion for transforming lines of code into impactful solutions. With a firm grasp of Java and a penchant for elegant design, I craft software that seamlessly blends efficiency and innovation. I thrive in collaborative environments, approaching challenges as opportunities for growth. My journey is marked by continuous learning, ensuring I stay ahead in the dynamic world of development. Explore my portfolio to witness my dedication to creating functional and exceptional software. Let's connect and create the future with code.
-            </p>
-          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I'm Vinay Kumar Singh, a Java Developer fueled by a profound passion for transforming lines of code into
+            impactful solutions. With a firm grasp of Java and a penchant for elegant design, I craft software that
+            seamlessly blends efficiency and innovation. I thrive in collaborative environments, approaching challenges
+            as opportunities for growth. My journey is marked by continuous learning, ensuring I stay ahead in the
+            dynamic world of development. Explore my portfolio to witness my dedication to creating functional and
+            exceptional software. Let's connect and create the future with code.
+          </p>
         </div>
       </div>
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-        alt=""
-      />
-    </section>
+    </div>
+    <img src="/assets/arrow.png" class="icon arrow" onclick="location.href='./#experience'" alt="" />
+  </section>
 
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
 
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-brands fa-html5 fa-2x icons" ></i>
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                 
-                <i class="fa-brands fa-css3 fa-2x icons" ></i>
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                 
-                <i class="fa-brands fa-square-js fa-2x icons" ></i>
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                 
-                <i class="fa-brands fa-angular fa-2x icons" ></i>
-                <div>
-                  <h3>Angular</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                 <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                /> 
-                <i class="fa-brands fa-tailwind fa-2x icons" ></i>
-                <div>
-                  <h3>TailwindCSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                
-                <i class="fa-brands fa-react fa-2x icons" ></i>
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa-brands fa-html5 fa-2x icons"></i>
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+
+              <i class="fa-brands fa-css3 fa-2x icons"></i>
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <i class="fa-brands fa-square-js fa-2x icons"></i>
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="/assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+
+              <i class="fa-brands fa-angular fa-2x icons"></i>
+              <div>
+                <h3>Angular</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="/assets/checkmark.png" alt="Experience icon" />
+              <i class="fa-brands fa-tailwind fa-2x icons"></i>
+              <div>
+                <h3>TailwindCSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <i class="fa-brands fa-react fa-2x icons"></i>
+              <div>
+                <h3>React</h3>
+                <p>Basic</p>
+              </div>
+            </article>
           </div>
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>  
-                <i class="fa-brands fa-java fa-2x icons" ></i>
-                <div>
-                  <h3>JAVA</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-
-              <article>
-                <i class="fa-regular fa-star fa-2x icons" ></i>
-                <div>
-                  <h3>Spring Boot</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-              <article>
-                <i class="fa-regular fa-star fa-2x icons" ></i>
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-regular fa-star fa-2x icons" ></i>
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-regular fa-star fa-2x icons" ></i>
-                <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-regular fa-star fa-2x icons" ></i>
-                <div>
-                  <h3>Flask</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              
-              <article>
-                <i class="fa-regular fa-star fa-2x icons" ></i>
-                <div>
-                  <h3>Microservices</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-            </div>
-          </div>
-
         </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa-brands fa-java fa-2x icons"></i>
+              <div>
+                <h3>JAVA</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-regular fa-star fa-2x icons"></i>
+              <div>
+                <h3>Spring Boot</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-regular fa-star fa-2x icons"></i>
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-regular fa-star fa-2x icons"></i>
+              <div>
+                <h3>MongoDB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-regular fa-star fa-2x icons"></i>
+              <div>
+                <h3>Python</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-regular fa-star fa-2x icons"></i>
+              <div>
+                <h3>Flask</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-regular fa-star fa-2x icons"></i>
+              <div>
+                <h3>Microservices</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
       </div>
+    </div>
 
-      <div class="details-container">
-        <h2 class="experience-sub-title">Developmental Tools</h2>
-        <div class="article-container">
-          <article>
-             <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            /> 
-            <div>
-              <h3>STS</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            />
-            <div>
-              <h3>VS Code</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            />
-            <div>
-              <h3>POSTMan</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-         
-          <article>
-            <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            />
-            <div>
-              <h3>GitHub</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          
-        </div>
+    <div class="details-container">
+      <h2 class="experience-sub-title">Developmental Tools</h2>
+      <div class="article-container">
+        <article>
+          <img class="icon" src="/assets/checkmark.png" alt="Experience icon" />
+          <div>
+            <h3>STS</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+        <article>
+          <img class="icon" src="/assets/checkmark.png" alt="Experience icon" />
+          <div>
+            <h3>VS Code</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+        <article>
+          <img class="icon" src="/assets/checkmark.png" alt="Experience icon" />
+          <div>
+            <h3>POSTMan</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+
+        <article>
+          <img class="icon" src="/assets/checkmark.png" alt="Experience icon" />
+          <div>
+            <h3>GitHub</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+
       </div>
+    </div>
 
-      
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        alt=""
-      />
-    </section>
 
-     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      
-      <div class="experience-details-container">
+    <img src="/assets/arrow.png" class="icon arrow" onclick="location.href='./#projects'" alt="" />
+  </section>
 
-        <div class="about-containers">
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-1.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Covisafe +</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Guyvinay/covisafePlus';"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://covisafe-plus.vercel.app/';"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+    <div class="experience-details-container">
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-2.png"
-                alt="project-2"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Customer Management</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Guyvinay/discreet-volcano-9320';"
-              >
-                GitHub
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#projects';"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div> 
+      <div class="about-containers">
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-3.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Batch Management</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Guyvinay/merry-tail-9310';"
-              >
-                GitHub
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#projects';"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-4.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">TrendZy</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Guyvinay/TrendZy';"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://64d7e090f5a8af2e6546d49f--eloquent-donut-39fe66.netlify.app/';"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-5.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Advance Auto Parts And Service</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Guyvinay/daring-ship-8304/';"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://64d7e716aee173332c8eff55--inspiring-trifle-fee05c.netlify.app/';"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div> 
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-3.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/';"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://linkedin.com/';"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          </div> 
-
-        </div>
-
-     
         
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/project-grid.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project-Grid</h2>
+          <p>Project-Grid is a project management tool that lets you get everything regarding your project under your wrist.</p>
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Guyvinay/Project-Grid';">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://project-grid.vercel.app/';">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/covisafe.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Covisafe +</h2>
+          <p>Covisafe+ offers real-time information, risk assessment, vaccination booking to combat the pandemic effectively.</p>
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Guyvinay/covisafePlus';">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://covisafe-plus.vercel.app/';">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/trendzy.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">TrendZy</h2>
+          <p>TrendZy is a platform where anyone can purchase their daily essentials seamlessly via our platform</p>
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Guyvinay/TrendZy';">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://64d7e090f5a8af2e6546d49f--eloquent-donut-39fe66.netlify.app/';">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/crm-system.png" alt="project-2" />
+          </div>
+          <h2 class="experience-sub-title project-title">CSR System</h2>
+          <p>A Core JAVA project that lets clients to register and raise queries that they are having and let CSRs resolve.</p>
+
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Guyvinay/Customer-Support-Representative';">
+              GitHub
+            </button>
+            <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#projects';"
+              >
+                Live Demo
+              </button> -->
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/batchmanagement.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Batch Management</h2>
+          <p>A Core Java Project that provides An Institute's Batch, Faculty, Students Management Service</p>
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Guyvinay/Batch-Management-System';">
+              GitHub
+            </button>
+            <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#projects';"
+              >
+                Live Demo
+              </button> -->
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/advance-auto.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Advance Auto Parts</h2>
+          <p>A Pure HTML, CSS, JS Project that provides clients to purchase automobile-part</p>
+          <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Guyvinay/daring-ship-8304/';">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://64d7e716aee173332c8eff55--inspiring-trifle-fee05c.netlify.app/';">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+
       </div>
 
+    </div>
 
 
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        alt=""
-      />
-    </section> 
-    
-    <section>
-      <!-- <div><h3 class="section__text__p1">GitHub Calender</h3></div> -->
-      <!-- <div class="react-activity-calendar">
+
+    </div>
+
+
+
+    <img src="/assets/arrow.png" class="icon arrow" onclick="location.href='./#contact'" alt="" />
+  </section>
+
+  <section>
+    <!-- <div><h3 class="section__text__p1">GitHub Calender</h3></div> -->
+    <!-- <div class="react-activity-calendar">
         <div class="calendar">
         Loading the data just for you.
         </div>
@@ -534,79 +459,79 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
     }).then(r => r.text())
         </script>
       </div> -->
-      <!-- Include the library. -->
+    <!-- Include the library. -->
 
-<!-- 
+    <!-- 
 <script
 src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script> -->
 
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
 
 
-<!-- Prepare a container for your calendar. -->
-  <!-- <div class="calendar">
+    <!-- Prepare a container for your calendar. -->
+    <!-- <div class="calendar">
   Loading stuff
   Loading the data just for you.
 </div> -->
 
-</section>
+  </section>
 
-    <section id="contact">
-      <p class="section__text__p1">Get In Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <!-- <img
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <!-- <img
             src="/assets/email.png"
             class="icon contact-icon"
             alt="Email icon"
           /> -->
-          <i class="fa-solid fa-envelope fa-xl icons"></i>
-          <p><a href="mailto:mrsinghvinay563@gmail.com">Gmail</a></p>
-        </div>
-        <!-- <div><i class="fa-solid fa-window-minimize fa-rotate-90 fa-xl"></i></i></div> -->
-        <div class="contact-info-container">
-          <!-- <img
-            src="/assets/email.png"
-            class="icon contact-icon"
-            alt="Email icon"
-          /> -->
-          <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
-          <i class="fa-brands fa-linkedin-in fa-2xl icons"></i>
-          <p><a href="https://www.linkedin.com/in/vinay-kumar-singh-849357253/" target="_blank">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <!-- <img
-            src="/assets/email.png"
-            class="icon contact-icon"
-            alt="Email icon"
-          /> -->
-          <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
-          <i class="fa-brands fa-github fa-2xl icons"></i>
-          <p><a href="https://github.com/Guyvinay" target="_blank">GitHub</a></p>
-        </div>
+        <i class="fa-solid fa-envelope fa-xl icons"></i>
+        <p><a href="mailto:mrsinghvinay563@gmail.com">Gmail</a></p>
       </div>
-    </section>
+      <!-- <div><i class="fa-solid fa-window-minimize fa-rotate-90 fa-xl"></i></i></div> -->
+      <div class="contact-info-container">
+        <!-- <img
+            src="/assets/email.png"
+            class="icon contact-icon"
+            alt="Email icon"
+          /> -->
+        <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
+        <i class="fa-brands fa-linkedin-in fa-2xl icons"></i>
+        <p><a href="https://www.linkedin.com/in/vinay-kumar-singh-849357253/" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <!-- <img
+            src="/assets/email.png"
+            class="icon contact-icon"
+            alt="Email icon"
+          /> -->
+        <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
+        <i class="fa-brands fa-github fa-2xl icons"></i>
+        <p><a href="https://github.com/Guyvinay" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Made With <i class="fa-solid fa-heart fa-xl icons"></i></p>
-    </footer>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Made With <i class="fa-solid fa-heart fa-xl icons"></i></p>
+  </footer>
 
-    
-  </body>
-  <script src="script.js"></script>
-  <!-- <script>
+
+</body>
+<script src="script.js"></script>
+<!-- <script>
     GitHubCalendar(".calendar", "guyvinay");
   
     // or enable responsive functionality:
@@ -619,4 +544,5 @@ src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
        }
     }).then(r => r.text())
   </script> -->
+
 </html>
