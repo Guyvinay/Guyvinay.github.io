@@ -4,13 +4,17 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
-
 var icon = document.getElementById("dark-toggle");
+var mode = false;
 icon.onclick = function(){
+     mode = !mode;
     document.body.classList.toggle("dark-mode");
     if(document.body.classList.contains("dark-mode")){
         document.getElementById("dark-toggle").className="fa-solid fa-sun";
     }else{
         document.getElementById("dark-toggle").className="fa-solid fa-moon";
     }
+    document.getElementById("github-streak-1").src=`https://github-readme-streak-stats.herokuapp.com?user=guyvinay&theme=${mode?"dark":"light"}&border_radius=30.4`;
+    document.getElementById("github-streak-2").src=`https://github-readme-stats.vercel.app/api?username=guyvinay&show_icons=true&theme=${mode?"dark":"light"}&border_radius=30.4`;
+    document.getElementById("github-streak-3").src=`https://github-readme-stats.vercel.app/api/top-langs/?username=guyvinay&layout=compact&theme=${mode?"dark":"light"}&border_radius=30.4`;
 }
