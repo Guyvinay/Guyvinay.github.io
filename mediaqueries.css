@@ -77,7 +77,7 @@
   }
   .section__pic-container {
     width: auto;
-    height: 50vw;
+    /* height: 50vw; */
     justify-content: center;
   }
   .section__text__p2 {
