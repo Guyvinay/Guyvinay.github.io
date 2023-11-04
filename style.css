@@ -146,8 +146,20 @@ nav {
   width: 100%;
   transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
   transition-delay: 0.5s;
-  z-index: 1;
+  z-index: 10;
 }
+#hamburger-nav {
+  position: fixed;
+  background: var(--bg-secondary);
+  /* top: 100%; */
+  top: 0%;
+  left: 0;
+  width: 100%;
+  transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
+  transition-delay: 0.5s;
+  z-index: 8;
+}
+
 
 .logo {
   width: 230px;
@@ -448,10 +460,7 @@ footer {
 
 /* HAMBURGER MENU */
 
-#hamburger-nav {
-  background-color: transparent;
-  display: none;
-}
+
 
 .hamburger-menu {
   position: relative;
