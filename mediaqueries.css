@@ -2,6 +2,7 @@
   #profile {
     height: fit-content;
     /* height: calc(83vh); */
+    
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -23,6 +24,8 @@
   }
   #hamburger-nav {
     display: flex;
+    justify-content: space-between;
+    /* border: 1px dashed red; */
   }
   .arrow {
     display: none;
@@ -44,6 +47,11 @@
   #profile {
     /* height: 83vh; */
     margin-bottom: 0;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px dashed red; */
   }
   article {
     font-size: 1rem;

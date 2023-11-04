@@ -150,7 +150,9 @@ nav {
 }
 
 .logo {
-  font-size: 2rem;
+  width: 230px;
+  font-size: 1.5rem;
+  /* border: 1px solid green; */
 }
 
 .nav-links {
@@ -305,7 +307,7 @@ a,
 /* PROFILE SECTION */
 
 #profile {
-  margin-top: 90px;
+  margin-top: 80px;
   gap: 10rem;
 }
 
@@ -447,12 +449,14 @@ footer {
 /* HAMBURGER MENU */
 
 #hamburger-nav {
+  background-color: transparent;
   display: none;
 }
 
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  z-index: 10;
 }
 
 .hamburger-icon {
@@ -475,7 +479,7 @@ footer {
   position: absolute;
   top: 100%;
   right: 0%;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
