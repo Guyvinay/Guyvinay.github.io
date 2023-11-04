@@ -10,8 +10,10 @@
 :root{
   --black: hsl(0, 0%, 0%);
   --fade-black: hsla(0, 8%, 55%, 0.435);
+  --fade-black-background: hsla(0, 25%, 90%, 0.835);
   --white: hsl(0, 0%, 100%);
   --fade-white:hsla(0, 10%, 84%, 0.216);
+  --fade-white-background:hsla(0, 6%, 10%, 0.816);
   --yellow: rgb(197, 197, 69);
   --red: rgb(177, 42, 42);
 
@@ -30,7 +32,8 @@
   --fade-white: hsla(0, 8%, 55%, 0.435);
   --fade-black:hsla(0, 10%, 84%, 0.216);
   --bg-secondary: hsl(0, 0%, 19%);
-
+  --fade-white-background:hsla(0, 25%, 90%, 0.835);
+  --fade-black-background:hsla(0, 6%, 10%, 0.816);
 }
 
 
@@ -460,6 +463,7 @@ footer {
   width: 100%;
   transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
   transition-delay: 0.5s;
+  
   z-index: 8;
 }
 
@@ -489,8 +493,10 @@ footer {
   position: absolute;
   top: 100%;
   right: 0%;
-  /* background-color: var(--white); */
+  background-color: var(--fade-black-background);
+  /* width: 100%; */
   width: fit-content;
+  border-radius: 50px 0 0 50px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
