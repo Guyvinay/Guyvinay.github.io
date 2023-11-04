@@ -135,7 +135,8 @@ a:hover {
 }
 
 nav {
-  height: 13vh;
+  /* height: 13vh; */
+  height: 80px;
 }
 #desktop-nav{
   position: fixed;
@@ -148,17 +149,7 @@ nav {
   transition-delay: 0.5s;
   z-index: 10;
 }
-#hamburger-nav {
-  position: fixed;
-  background: var(--bg-secondary);
-  /* top: 100%; */
-  top: 0%;
-  left: 0;
-  width: 100%;
-  transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
-  transition-delay: 0.5s;
-  z-index: 8;
-}
+
 
 
 .logo {
@@ -460,7 +451,17 @@ footer {
 
 /* HAMBURGER MENU */
 
-
+#hamburger-nav {
+  position: fixed;
+  background: var(--bg-secondary);
+  /* top: 100%; */
+  top: 0%;
+  left: 0;
+  width: 100%;
+  transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
+  transition-delay: 0.5s;
+  z-index: 8;
+}
 
 .hamburger-menu {
   position: relative;
