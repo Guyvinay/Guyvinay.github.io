@@ -403,12 +403,19 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:380px;
+  /* width:380px; */
+  width: 90%;
   gap:.5rem ;
   margin:0 auto;
+  /* border: 1px dashed black; */
 }
 #github-streak-1,#github-streak-2,#github-streak-3{
-  width: 100%;
+  /* width: 100%; */
+  width: 380px;
+}
+#github-streak-0{
+  /* border: 1px dashed red; */
+  width: 90%;
 }
 
 
