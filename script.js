@@ -14,9 +14,9 @@ icon.onclick = function(){
     }else{
         document.getElementById("dark-toggle").className="fa-solid fa-moon";
     }
-    document.getElementById("github-streak-1").src=`https://github-readme-streak-stats.herokuapp.com?user=guyvinay&theme=${mode?"dark":"light"}&border_radius=30.4`;
-    document.getElementById("github-streak-2").src=`https://github-readme-stats.vercel.app/api?username=guyvinay&show_icons=true&theme=${mode?"dark":"light"}&border_radius=30.4`;
-    document.getElementById("github-streak-3").src=`https://github-readme-stats.vercel.app/api/top-langs/?username=guyvinay&layout=compact&theme=${mode?"dark":"light"}&border_radius=30.4`;
+    document.getElementById("github-streak-1").src=`https://github-readme-streak-stats.herokuapp.com?user=guyvinay&theme=${mode?"dark":"light"}`;
+    document.getElementById("github-streak-2").src=`https://github-readme-stats.vercel.app/api?username=guyvinay&show_icons=true&theme=${mode?"dark":"light"}`;
+    document.getElementById("github-streak-3").src=`https://github-readme-stats.vercel.app/api/top-langs/?username=guyvinay&layout=compact&theme=${mode?"dark":"light"}`;
 }
 var icon = document.getElementById("dark-toggle-2");
 var mode = false;
