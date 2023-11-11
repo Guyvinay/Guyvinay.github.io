@@ -415,7 +415,7 @@ article {
   border-color: rgb(163, 163, 163);
   border-radius: 1rem;
 }
-#github-streak-0{
+#github-streak-0,#github-streak-4{
   width: 98%;
   border: var(--black) 0.1rem solid;  
   border-color: rgb(163, 163, 163);

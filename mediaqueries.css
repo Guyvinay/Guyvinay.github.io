@@ -101,7 +101,8 @@
   #github-streak-1,#github-streak-2,#github-streak-3{
     width: 100%;
   }
-  #github-streak-0{
+  #github-streak-0,
+    #github-streak-4{
     width: 100%;
   }
 }
