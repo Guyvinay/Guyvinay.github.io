@@ -420,6 +420,7 @@ article {
   border: var(--black) 0.1rem solid;  
   border-color: rgb(163, 163, 163);
   border-radius: 1rem;
+  padding: 5px;
 }
 
 
