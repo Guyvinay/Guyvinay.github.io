@@ -66,6 +66,7 @@ nav,
 .contact-info-container,
 .experience-details-container,
 .nav-links,
+.btn-container-1,
 .btn-container,
 .section__pic-container,
 .section-container {
@@ -103,7 +104,7 @@ nav,
 .experience-details-container,
 .contact-info-upper-container,
 .contact-info-container,
-.btn-container {
+.btn-container-1, .btn-container {
   justify-content: center;
 }
 
@@ -305,10 +306,13 @@ a,
   box-shadow: 0px 0px 0px 0px var(--fade-black);
 }
 
-#socials-container,
-.btn-container {
+#socials-container, .btn-container-1 {
   gap: 1rem;
 }
+
+/*.btn-container {
+  gap: 1rem;
+}  */
 
 /* PROFILE SECTION */
 
@@ -388,8 +392,8 @@ article {
 /* PROJECTS SECTION */
 
 .project-img {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 70%;
 }
 
 .color-container,
