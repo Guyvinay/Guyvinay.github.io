@@ -1,668 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/vinay-picofme-01a.png
-    "
-    />
-    <title>Vinay-Singh-PortFolio</title>
-  </head>
 
-  <body>
-    <nav id="desktop-nav" class="nav">
-      <div class="logo">
-        <img src="./assets/vinay_logo_SVG.svg" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="./assets/vinay-picofme-01a.png
+    " />
+  <title>Vinay-Singh-PortFolio</title>
+</head>
+
+<body>
+  <nav id="desktop-nav" class="nav">
+    <div class="logo">
+      <img src="./assets/vinay_logo_SVG.svg" alt="" />
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a onclick="window.open('./assets/Vinay_Singh_Java_Backend_Developer.pdf')">Resume</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-moon" id="dark-toggle" aria-label="Change Theme"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <img src="./assets/vinay_logo_SVG.svg" alt="" />
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div>
+      <div class="menu-links">
+        <li><a href="#about " onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li>
+          <a onclick="window.open('./assets/Vinay_Singh_Java_Backend_Developer.pdf')">Resume</a>
+        </li>
+        <li><a id="dark-toggle-2">Dark</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="head-pic" src="./assets/profile-pic-vinay.jpg" alt="Vinay profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vinay Kumar Singh</h1>
+      <p class="section__text__p2"> Full Stack Developer | Java • Spring Boot • Microservices • Angular </p>
+      <div class="btn-container-1">
+        <a class="btn btn-color-2" onclick="window.open('./assets/Vinay_Singh_Java_Backend_Developer.pdf')">
+          Resume
+        </a>
+        <a class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-container">
+      <div class="about-details-container">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-containers">
+          <div class="details-container">
+            <!-- <img
+                class="icon"
+                src="/assets/experience.png"
+                alt="Experience icon"
+              /> -->
+            <i class="fa-solid fa-flask fa-xl icons"></i>
+            <h3>Experience</h3>
+            <p>Full Stack Web Development</p>
+          </div>
+          <div class="details-container">
+            <!-- <img
+                class="icon"
+                src="/assets/education.png"
+                alt="Experience icon"
+              /> -->
+            <i class="fa-solid fa-user-graduate fa-xl icons"></i>
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a Backend Developer specializing in Java, Spring Boot, Microservices, and Angular, with hands-on
+            experience building scalable, secure, and high-performance enterprise platforms. I have designed and
+            maintained distributed systems using REST, GraphQL, gRPC, RabbitMQ, and WebSocket, focusing on asynchronous
+            processing, fault tolerance, and system reliability.
+            I have worked on platform-level services including authentication systems, data pipelines processing
+            millions of records, asynchronous email delivery systems with idempotency and Redis caching, and
+            Elasticsearch-based search indexing. I actively contribute to production stability by optimizing bulk
+            onboarding flows, resolving critical authentication issues, and improving system performance.
+            I am passionate about clean architecture, performance optimization, and production-ready engineering
+            practices such as CI/CD automation, containerization, and observability. I enjoy solving complex backend
+            challenges and building systems that scale reliably under real-world workloads.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <img src="/assets/arrow.png" class="icon arrow" onclick="location.href='./#experience'" alt="" />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend & Platform Stack</h2>
+          <div class="article-container">
+
+            <article>
+              <i class="fa-brands fa-java fa-2x icons"></i>
+              <div>
+                <h3>Java</h3>
+                <p>Enterprise Backend Development</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-regular fa-star fa-2x icons"></i>
+              <div>
+                <h3>Spring Boot</h3>
+                <p>Microservices Architecture</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-regular fa-shield fa-2x icons"></i>
+              <div>
+                <h3>Spring Security</h3>
+                <p>JWT, OAuth2, SAML</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-diagram-project fa-2x icons"></i>
+              <div>
+                <h3>Microservices</h3>
+                <p>Distributed System Design</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-arrows-rotate fa-2x icons"></i>
+              <div>
+                <h3>RabbitMQ</h3>
+                <p>Asynchronous Messaging</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-bolt fa-2x icons"></i>
+              <div>
+                <h3>gRPC</h3>
+                <p>High Performance RPC</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-cloud fa-2x icons"></i>
+              <div>
+                <h3>REST / GraphQL</h3>
+                <p>API Design & Integration</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-database fa-2x icons"></i>
+              <div>
+                <h3>PostgreSQL / MySQL</h3>
+                <p>Transactional Data Systems</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-magnifying-glass fa-2x icons"></i>
+              <div>
+                <h3>Elasticsearch</h3>
+                <p>Search & Analytics Engine</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-memory fa-2x icons"></i>
+              <div>
+                <h3>Redis</h3>
+                <p>Caching & Idempotency</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-brands fa-docker fa-2x icons"></i>
+              <div>
+                <h3>Docker</h3>
+                <p>Containerized Deployments</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-gears fa-2x icons"></i>
+              <div>
+                <h3>CI/CD</h3>
+                <p>Jenkins, Nexus, OpenShift</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-code fa-2x icons"></i>
+              <div>
+                <h3>TypeScript</h3>
+                <p>Strongly Typed Frontend Integration</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-brands fa-angular fa-2x icons"></i>
+              <div>
+                <h3>Angular</h3>
+                <p>Enterprise UI Development</p>
+              </div>
+            </article>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="details-container">
+      <h2 class="experience-sub-title">Engineering Tools & DevOps</h2>
+      <div class="article-container">
+
+        <article>
+          <i class="fa-brands fa-docker fa-2x icons"></i>
+          <div>
+            <h3>Docker</h3>
+            <p>Containerized Deployments</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-gears fa-2x icons"></i>
+          <div>
+            <h3>Jenkins</h3>
+            <p>CI/CD Automation</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-box fa-2x icons"></i>
+          <div>
+            <h3>Nexus</h3>
+            <p>Artifact Management</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-cloud fa-2x icons"></i>
+          <div>
+            <h3>OpenShift</h3>
+            <p>Container Orchestration</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-brands fa-git-alt fa-2x icons"></i>
+          <div>
+            <h3>Git</h3>
+            <p>Version Control</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-brands fa-bitbucket fa-2x icons"></i>
+          <div>
+            <h3>Bitbucket</h3>
+            <p>Repository Management</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-diagram-project fa-2x icons"></i>
+          <div>
+            <h3>Maven</h3>
+            <p>Build & Dependency Management</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-plug fa-2x icons"></i>
+          <div>
+            <h3>Postman</h3>
+            <p>API Testing & Debugging</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-chart-line fa-2x icons"></i>
+          <div>
+            <h3>Grafana</h3>
+            <p>Monitoring & Observability</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-code fa-2x icons"></i>
+          <div>
+            <h3>IntelliJ IDEA</h3>
+            <p>Backend Development IDE</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-chart-area fa-2x icons"></i>
+          <div>
+            <h3>New Relic</h3>
+            <p>Application Performance Monitoring</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-plug-circle-bolt fa-2x icons"></i>
+          <div>
+            <h3>Mockoon</h3>
+            <p>API Mocking & Contract Testing</p>
+          </div>
+        </article>
+
+        <article>
+          <i class="fa-brands fa-github fa-2x icons"></i>
+          <div>
+            <h3>GitHub</h3>
+            <p>Version Control & Collaboration</p>
+          </div>
+        </article>
+
+
+      </div>
+    </div>
+    <img src="/assets/arrow.png" class="icon arrow" onclick="location.href='./#projects'" alt="" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/microservices-platform.png" alt="Microservices Platform" />
+          </div>
+
+          <h2 class="experience-sub-title project-title">
+            Microservices
+          </h2>
+
+          <p>
+            Designed and built microservices ecosystem with centralized authentication,
+            multitenancy, asynchronous messaging (dev-auth-server, dev-sandbox, dev-integration,dev-email-server).
+          </p>
+
+          <br />
+
+          <div class="btn-container">
+            <a class="btn btn-color-2 project-btn" href="https://github.com/Guyvinay/dev-microservices-lab"
+              target="_blank">
+              GitHub
+            </a>
+
+            <a class="btn btn-color-2 project-btn" href="#"
+              onclick="alert('Spring Boot, Spring Security, Nimbus JOSE + JWT, Envers, Liquibase, GraphQL,REST, WebSocket, RabbitMQ, gRPC, Elasticsearch, Swagger, AOP, Multitenancy, Docker')">
+              Architecture
+            </a>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/we-care.png" alt="project-2" />
+          </div>
+          <h2 class="experience-sub-title project-title">We Care</h2>
+          <p>
+            We Care is a comprehensive application designed to automate and
+            streamline various aspects of hospital operations.
+          </p>
+          <br />
+          <div class="btn-container">
+            <a class="btn btn-color-2 project-btn" href="https://github.com/Guyvinay/WeCare" target="_blank">
+              GitHub
+            </a>
+            <a class="btn btn-color-2 project-btn" href="https://github.com/Guyvinay/WeCare" target="_blank">
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/project-grid.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project-Grid</h2>
+          <p>
+            Project-Grid is a project management tool that lets you get
+            everything regarding your project under your wrist.
+          </p>
+          <br />
+          <div class="btn-container">
+            <a class="btn btn-color-2 project-btn" href="https://github.com/Guyvinay/Project-Grid" target="_blank">
+              GitHub
+            </a>
+            <a class="btn btn-color-2 project-btn" href="https://project-grid.vercel.app" target="_blank">
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="/assets/covisafe.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Covisafe+</h2>
+          <p>
+            Covisafe+ offers real-time information, risk assessment,
+            vaccination booking to combat the pandemic effectively.
+          </p>
+          <br />
+          <div class="btn-container">
+            <a class="btn btn-color-2 project-btn" href="https://github.com/Guyvinay/covisafePlus" target="_blank">
+              GitHub
+            </a>
+            <a class="btn btn-color-2 project-btn" href="https://covisafe-plus.vercel.app/" target="_blank">
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="/assets/arrow.png" class="icon arrow" onclick="location.href='./#contact'" alt="" />
+  </section>
+
+  <!-- GitHub Calender -->
+  <section id="github-section">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">GitHub Stats</h1>
+    <img id="github-streak-0" src="https://ghchart.rshah.org/Guyvinay?theme=dark" alt="Guyvinay's Github chart" />
+    <img id="github-streak-4"
+      src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Guyvinay" alt="" />
+    <img id="github-streak-1" src="https://github-readme-streak-stats.herokuapp.com?user=guyvinay&theme=light"
+      alt="GitHub Streak" />
+    <!-- <img id="github-streak-2"
+      src="https://github-readme-stats.vercel.app/api?username=guyvinay&show_icons=true&theme=light&" alt="" /> -->
+    <img id="github-streak-3"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=guyvinay&layout=compact&theme=light" alt="" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <i class="fa-solid fa-envelope fa-xl icons"></i>
+        <p>
+          <a href="mailto:mrsinghvinay563@gmail.com">mrsinghvinay563@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa-solid fa-phone fa-xl icons"></i>
+        <p><a>7479856872</a></p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
+        <i class="fa-brands fa-linkedin-in fa-2xl icons"></i>
+        <p>
+          <a href="https://www.linkedin.com/in/vinay-kumar-singh-849357253/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
+        <i class="fa-brands fa-github fa-2xl icons"></i>
+        <p>
+          <a href="https://github.com/Guyvinay" target="_blank">GitHub</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
+        <i class="fa-brands fa-twitter fa-2xl icons"></i>
+        <p>
+          <a href="https://twitter.com/MR_SINGH_VINAY" target="_blank">Twitter</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li>
-            <a
-              onclick="window.open('./assets/VINAY KUMAR SINGH-Java Backend Developer.pdf')"
-              >Resume</a
-            >
-          </li>
-          <li>
-            <i
-              class="fa-solid fa-moon"
-              id="dark-toggle"
-              aria-label="Change Theme"
-            ></i>
-          </li>
         </ul>
       </div>
     </nav>
+    <p>Made With <i class="fa-solid fa-heart fa-xl icons"></i></p>
+  </footer>
+</body>
+<script src="script.js"></script>
 
-    <nav id="hamburger-nav">
-      <div class="logo">
-        <img src="./assets/vinay_logo_SVG.svg" alt="" />
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about " onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li>
-            <a
-              onclick="window.open('./assets/VINAY KUMAR SINGH-Java Backend Developer.pdf')"
-              >Resume</a
-            >
-          </li>
-          <li><a id="dark-toggle-2">Dark</a></li>
-        </div>
-      </div>
-    </nav>
-
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          class="head-pic"
-          src="./assets/vinay_pic-01.png"
-          alt="Vinay profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Vinay Kr. Singh</h1>
-        <p class="section__text__p2">JAVA Backend Developer</p>
-        <div class="btn-container-1">
-          <a
-            class="btn btn-color-2"
-            onclick="window.open('./assets/VINAY KUMAR SINGH-Java Backend Developer.pdf')"
-          >
-            Resume
-          </a>
-          <a class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            class="about-pic"
-            src="./assets/vinay-pic (2).jpg"
-            alt="Profile Picture"
-          />
-        </div>
-        <div class="about-details-container">
-          <p class="section__text__p1">Get To Know More</p>
-          <h1 class="title">About Me</h1>
-          <div class="about-containers">
-            <div class="details-container">
-              <!-- <img
-                class="icon"
-                src="/assets/experience.png"
-                alt="Experience icon"
-              /> -->
-              <i class="fa-solid fa-flask fa-xl icons"></i>
-              <h3>Experience</h3>
-              <p>Backend Web Development</p>
-            </div>
-            <div class="details-container">
-              <!-- <img
-                class="icon"
-                src="/assets/education.png"
-                alt="Experience icon"
-              /> -->
-              <i class="fa-solid fa-user-graduate fa-xl icons"></i>
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm Vinay Kumar Singh, a Java Developer fueled by a profound
-              passion for transforming lines of code into impactful solutions.
-              With a firm grasp of Java and a penchant for elegant design, I
-              craft software that seamlessly blends efficiency and innovation. I
-              thrive in collaborative environments, approaching challenges as
-              opportunities for growth. My journey is marked by continuous
-              learning, ensuring I stay ahead in the dynamic world of
-              development. Explore my portfolio to witness my dedication to
-              creating functional and exceptional software. Let's connect and
-              create the future with code.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-        alt=""
-      />
-    </section>
-
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-brands fa-html5 fa-2x icons"></i>
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-css3 fa-2x icons"></i>
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-square-js fa-2x icons"></i>
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-angular fa-2x icons"></i>
-                <div>
-                  <h3>Angular</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <i class="fa-brands fa-tailwind fa-2x icons"></i>
-                <div>
-                  <h3>TailwindCSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-react fa-2x icons"></i>
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-brands fa-java fa-2x icons"></i>
-                <div>
-                  <h3>JAVA</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-
-              <article>
-                <i class="fa-regular fa-star fa-2x icons"></i>
-                <div>
-                  <h3>Spring Boot</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-
-              <article>
-                <i class="fa-regular fa-star fa-2x icons"></i>
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-regular fa-star fa-2x icons"></i>
-                <div>
-                  <h3>PostgresDB</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-regular fa-star fa-2x icons"></i>
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-regular fa-star fa-2x icons"></i>
-                <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-
-              <article>
-                <i class="fa-regular fa-star fa-2x icons"></i>
-                <div>
-                  <h3>Flask</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-
-              <article>
-                <i class="fa-regular fa-star fa-2x icons"></i>
-                <div>
-                  <h3>Microservices</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="details-container">
-        <h2 class="experience-sub-title">Developmental Tools</h2>
-        <div class="article-container">
-          <article>
-            <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            />
-            <div>
-              <h3>STS</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-
-          <article>
-            <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            />
-            <div>
-              <h3>VSCode</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-
-          <article>
-            <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            />
-            <div>
-              <h3>POSTMan</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-
-          <article>
-            <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            />
-            <div>
-              <h3>GitHub</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-
-          <article>
-            <img
-              class="icon"
-              src="/assets/checkmark.png"
-              alt="Experience icon"
-            />
-            <div>
-              <h3>Intellij IDEA</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        alt=""
-      />
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/we-care.png"
-                alt="project-2"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">We Care</h2>
-            <p>
-              We Care is a comprehensive application designed to automate and
-              streamline various aspects of hospital operations.
-            </p>
-            <br />
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Guyvinay/WeCare"
-                target="_blank"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Guyvinay/WeCare"
-                target="_blank"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/project-grid.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project-Grid</h2>
-            <p>
-              Project-Grid is a project management tool that lets you get
-              everything regarding your project under your wrist.
-            </p>
-            <br />
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Guyvinay/Project-Grid"
-                target="_blank"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://project-grid.vercel.app"
-                target="_blank"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/covisafe.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Covisafe +</h2>
-            <p>
-              Covisafe+ offers real-time information, risk assessment,
-              vaccination booking to combat the pandemic effectively.
-            </p>
-            <br />
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Guyvinay/covisafePlus"
-                target="_blank"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://covisafe-plus.vercel.app/"
-                target="_blank"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/task-supervision.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Task Supervision</h2>
-            <p>
-              Task Supervision is a angular-spring app, which can be used to
-              Manage an individual's Tasks
-            </p>
-            <br />
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Guyvinay/Coding-Assignment/tree/main/Task-Supervision-App"
-                target="_blank"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://coding-assignment-sand.vercel.app/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/trendzy.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">TrendZy</h2>
-            <p>
-              TrendZy is a platform where anyone can purchase their daily
-              essentials seamlessly via our platform
-            </p>
-            <br />
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Guyvinay/TrendZy"
-                target="_blank"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://guyvinay.github.io/TrendZy/"
-                target="_blank"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="/assets/connectPlus.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Connect Plus</h2>
-            <p>
-              A chattimg application build using websocket, spring boot that
-              connects people through web.
-            </p>
-            <br />
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Guyvinay/Eazy-Comms/tree/main/WS-Chat-App"
-                target="_blank"
-              >
-                GitHub
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Guyvinay/Eazy-Comms/tree/main/WS-Chat-App"
-                target="_blank"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        alt=""
-      />
-    </section>
-
-    <!-- GitHub Calender -->
-    <section id="github-section">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">GitHub Stats</h1>
-      <img
-        id="github-streak-0"
-        src="https://ghchart.rshah.org/Guyvinay?theme=dark"
-        alt="Guyvinay's Github chart"
-      />
-      <img
-        id="github-streak-4"
-        src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Guyvinay"
-        alt=""
-      />
-      <img
-        id="github-streak-1"
-        src="https://github-readme-streak-stats.herokuapp.com?user=guyvinay&theme=light"
-        alt="GitHub Streak"
-      />
-      <!-- <img id="github-streak-2"
-      src="https://github-readme-stats.vercel.app/api?username=guyvinay&show_icons=true&theme=light&" alt="" /> -->
-      <img
-        id="github-streak-3"
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=guyvinay&layout=compact&theme=light"
-        alt=""
-      />
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get In Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <i class="fa-solid fa-envelope fa-xl icons"></i>
-          <p>
-            <a href="mailto:mrsinghvinay563@gmail.com"
-              >mrsinghvinay563@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <i class="fa-solid fa-phone fa-xl icons"></i>
-          <p><a>7479856872</a></p>
-        </div>
-        <div class="contact-info-container">
-          <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
-          <i class="fa-brands fa-linkedin-in fa-2xl icons"></i>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/vinay-kumar-singh-849357253/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
-          <i class="fa-brands fa-github fa-2xl icons"></i>
-          <p>
-            <a href="https://github.com/Guyvinay" target="_blank">GitHub</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <i class="fa-solid fa-window-minimize fa-rotate-90 fa-2xl icons"></i>
-          <i class="fa-brands fa-twitter fa-2xl icons"></i>
-          <p>
-            <a href="https://twitter.com/MR_SINGH_VINAY" target="_blank"
-              >Twitter</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Made With <i class="fa-solid fa-heart fa-xl icons"></i></p>
-    </footer>
-  </body>
-  <script src="script.js"></script>
 </html>

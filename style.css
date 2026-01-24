@@ -262,7 +262,7 @@ a,
   border-radius: 2rem;
 }
 .head-pic{
-  border-radius: 48%;
+  border-radius: 10%;
 }
 .btn-color-1,
 .btn-color-2,
@@ -393,7 +393,7 @@ article {
 
 .project-img {
   width: 80%;
-  height: 70%;
+  height: 160px;
 }
 
 .color-container,
